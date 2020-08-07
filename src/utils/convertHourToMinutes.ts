@@ -1,5 +1,5 @@
-export default function convertHourToMinutes(time:string) {
+export default function convertHourToMinutes(time: string) {
   const [hour, minutes] = time.split(':').map(Number);
 
-  return ((hour * 60) + minutes)
+  return hour * 60 + minutes;
 }
