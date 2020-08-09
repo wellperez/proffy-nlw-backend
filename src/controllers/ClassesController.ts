@@ -18,6 +18,7 @@ interface QueryParams {
 export default class ClassesController {
   async index(request: Request, response: Response) {
 
+    //TODO buscar solução de implementação
     const subject = request.query.subject as string;
     const week_day = request.query.week_day as string;
     const time = request.query.time as string;
